@@ -1,7 +1,6 @@
 {
   "name": "netflix-final",
   "version": "0.1.0",
-  "homepage": "https://Mohizanur.github.io/Netflix-clone-2024",
   "private": true,
   "dependencies": {
     "@emotion/react": "11.11.1",
@@ -18,31 +17,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "gh-pages": "^6.1.1"
   }
 }
