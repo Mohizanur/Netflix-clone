@@ -65,15 +65,13 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
 
             return (
               <img
-                onClick={() => handleClick(movie)}
                 key={index}
                 src={imgUrl}
                 alt={movie.name || movie.title || "No Title"}
                 className={`row_poster ${isLargeRow && "row_posterLarge"}`}
+                onClick={() => handleClick(movie)}
                 onError={(e) => {
-                  e.target.onerror = null;
-                  e.target.src =
-                    "https://via.placeholder.com/200x300?text=Image+Not+Available";
+                  e.target.style.display = "none";
                 }}
               />
             );
